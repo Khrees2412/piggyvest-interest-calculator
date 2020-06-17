@@ -3,9 +3,7 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Varela+Round|Muli:200,400,800|Poppins|Lato|Playfair+Display" >
     <link rel="stylesheet" href="index.css">
-    
-
-
+    <script src="index.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PiggyVest Interest Calculator</title>
@@ -25,53 +23,56 @@
 
     <h1 style="text-align: center;">Calculate your interest using the rate given by PiggyVest for the services.</h1>
     <div class="box">
-        
+
     <div class="box1">
         <h3>SafeLock</h3>
 
         <label> <p>How much are you investing ?</p> <small>(PRINCIPAL FEE)</small> </label>
-        
-        <input type="number" id="principal">
-        
+
+        <input type="number" id="safelock">
+
         <label> <p>For how long ?</p> <small>(Duration in months)</small></label>
-        <input type="number" id="duration">
+        <input type="number" id="sl_dur">
         <br>
-        <button type="submit"> Calculate </button>
+        <button type="submit" onclick="safelock()"> Calculate </button>
 
     </div>
     <div class="box2">
         <h3>Target Savings</h3>
 
         <label> <p>How much are you investing ?</p> <small>(PRINCIPAL FEE)</small> </label>
-        
-        <input type="number" id="principal">
-        
+
+        <input type="number" id="t_savings">
+
         <label> <p>For how long ? </p> <small>(Duration in months)</small></label>
-        <input type="number" id="duration">
+        <input type="number" id="ts_dur">
         <br>
-        <button type="submit"> Calculate </button>
+        <button type="submit" onclick="t_savings()"> Calculate </button>
 
     </div>
     <div class="box3">
         <h3>PiggyBank</h3>
 
         <label> <p>How much are you investing ?</p> <small>(PRINCIPAL FEE)</small> </label>
-        <input type="number" id="principal">
-        
+        <input type="number" id="piggybank">
+
         <label> <p>For how long ? </p> <small>(Duration in months)</small></label>
-        <input type="number" id="duration">
+        <input type="number" id="pg_dur">
         <br>
-        <button type="submit"> Calculate </button>
+        <button type="submit" onclick="piggybank()"> Calculate </button>
 
     </div>
-  
+
 </div>
-<div class="result">
-    Your Monthly Interest is: 
+<div class="result" id="sl_tp">
+
+</div>
+<div class="err" id="err">
+
 </div>
 </body>
 
-<!-- JS, Popper.js, and jQuery 
+<!-- JS, Popper.js, and jQuery
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
