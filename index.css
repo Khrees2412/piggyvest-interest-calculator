@@ -4,7 +4,7 @@ body{
     padding: 0px;
     font-size: 16px;
     font-weight: 400;
-   
+
  }
  h3{
      text-decoration: underline solid;
@@ -33,7 +33,7 @@ nav li a{
 }
 /*
 input{
-   
+
 
 }
 */
@@ -76,6 +76,14 @@ button{
     justify-content: center;
     margin-top:15px ;
     color: blue;
+    font-size: 20px;
+    font-weight: 800;
+}
+.err{
+    display: flex;
+    justify-content: center;
+    margin-top:15px ;
+    color: red;
     font-size: 20px;
     font-weight: 800;
 }
