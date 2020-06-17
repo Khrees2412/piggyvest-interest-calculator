@@ -6,6 +6,9 @@ body{
     font-weight: 400;
    
  }
+ h3{
+     text-decoration: underline solid;
+ }
 header{
     display: flex;
     justify-content: center;
@@ -67,4 +70,12 @@ button{
     margin-right: 10px;
     border: 1px solid blue;
     padding: 10px;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    margin-top:15px ;
+    color: blue;
+    font-size: 20px;
+    font-weight: 800;
 }
