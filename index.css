@@ -2,8 +2,69 @@ body{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-}
+    font-size: 16px;
+    font-weight: 400;
+   
+ }
 header{
+    display: flex;
+    justify-content: center;
     background-color: white;
     color: blue;
+}
+.brand-logo{
+    float: left;
+}
+nav{
+    margin-top: 25px;
+    font-weight: 500;
+}
+nav li {
+    display: inline;
+    list-style-type: none;
+}
+nav li a{
+    margin: 15px;
+    padding: 5px;
+    text-decoration: none;
+}
+/*
+input{
+   
+
+}
+*/
+button{
+    outline:none ;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background: blue;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 500;
+    font: 1em sans-serif;
+    color: white;
+}
+.box{
+    display: flex;
+    justify-content: center;
+}
+.box1{
+    margin-right: 10px;
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+.box2{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+.box3{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid blue;
+    padding: 10px;
 }
