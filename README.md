@@ -1,2 +1,2 @@
 # piggyvest-interest-calculator
-A webpage to calculator interest on PiggyVest savings
+A webpage to calculate simple interest on PiggyVest savings
