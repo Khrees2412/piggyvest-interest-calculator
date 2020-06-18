@@ -2,6 +2,7 @@ body{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font: poppins;
     font-size: 16px;
     font-weight: 400;
 
@@ -17,6 +18,7 @@ header{
 }
 .brand-logo{
     float: left;
+    left: 0;
 }
 nav{
     margin-top: 25px;
@@ -27,9 +29,10 @@ nav li {
     list-style-type: none;
 }
 nav li a{
-    margin: 15px;
-    padding: 5px;
+    margin: 23px;
+    padding: 10px;
     text-decoration: none;
+    float: right;
 }
 /*
 input{
@@ -48,28 +51,39 @@ button{
     font: 1em sans-serif;
     color: white;
 }
+button:hover{
+    background:rgb(54, 54, 151)
+}
 .box{
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 .box1{
+    margin-left: 10px;
     margin-right: 10px;
-    border: 1px solid blue;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
     padding: 10px;
+    box-shadow:1px 1px 2px #ccc ;
 }
 
 .box2{
     margin-left: 10px;
     margin-right: 10px;
-    border: 1px solid blue;
+    border: 1px solid #ccc;
     padding: 10px;
+    box-shadow:1px 1px 2px #ccc ;
+    margin-bottom: 10px;
+
 }
 
 .box3{
     margin-left: 10px;
     margin-right: 10px;
-    border: 1px solid blue;
+    border: 1px solid #ccc;
     padding: 10px;
+    box-shadow:1px 1px 2px #ccc ;
 }
 .result{
     display: flex;
